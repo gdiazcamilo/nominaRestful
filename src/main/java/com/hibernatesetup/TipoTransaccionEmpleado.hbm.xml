@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 19, 2015 4:45:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.TipoTransaccionEmpleado" table="TIPOTRANSACCIONEMPLEADO">
+        <id name="idtipoTransaccionEmpleado" type="int">
+            <column name="IDTIPOTRANSACCIONEMPLEADO" />
+            <generator class="identity" />
+        </id>
+        <property name="idEmpleado" type="int">
+            <column name="IDEMPLEADO" />
+        </property>
+        <property name="idTipoTransaccion" type="int">
+            <column name="IDTIPOTRANSACCION" />
+        </property>
+        <property name="monto" type="double">
+            <column name="MONTO" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2015 12:02:41 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Transactions" table="TRANSACTIONS">
+        <id name="idtransactions" type="int">
+            <column name="IDTRANSACTIONS" />
+            <generator class="assigned" />
+        </id>
+        <property name="fecha" type="java.lang.String">
+            <column name="FECHA" />
+        </property>
+        <property name="monto" type="double">
+            <column name="MONTO" />
+        </property>
+        <property name="estado" type="boolean">
+            <column name="ESTADO" />
+        </property>
+        <property name="nominaId" type="int">
+            <column name="NOMINAID" />
+        </property>
+        <property name="tipoTransaccionEmpleado" type="int">
+            <column name="TIPOTRANSACCIONEMPLEADO" />
+        </property>
+    </class>
+</hibernate-mapping>

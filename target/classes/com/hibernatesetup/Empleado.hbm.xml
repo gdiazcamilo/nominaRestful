@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 9, 2015 12:19:14 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Empleado" table="EMPLEADOS">
+        <id name="idempleados" type="int">
+            <column name="IDEMPLEADOS" />
+            <generator class="identity" />
+        </id>
+        <property name="cedula" type="java.lang.String">
+            <column name="CEDULA" />
+        </property>
+        <property name="nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+        <property name="departamento" type="java.lang.String">
+            <column name="DEPARTAMENTO" />
+        </property>
+        <property name="puesto" type="java.lang.String">
+            <column name="PUESTO" />
+        </property>
+    </class>
+</hibernate-mapping>

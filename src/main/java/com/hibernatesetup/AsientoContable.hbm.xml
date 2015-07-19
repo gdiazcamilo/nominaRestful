@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2015 10:57:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.AsientoContable" table="ASIENTOSCONTABLES">
+        <id name="idasientosContables" type="int">
+            <column name="IDASIENTOSCONTABLES" />
+            <generator class="identity" />
+        </id>
+        <property name="descripcion" type="java.lang.String">
+            <column name="DESCRIPCION" />
+        </property>
+        <property name="cuenta" type="java.lang.String">
+            <column name="CUENTA" />
+        </property>
+        <property name="tipoMovimiento" type="int">
+            <column name="TIPOMOVIMIENTO" />
+        </property>
+        <property name="fecha" type="java.lang.String">
+            <column name="FECHA" />
+        </property>
+        <property name="monto" type="double">
+            <column name="MONTO" />
+        </property>
+        <property name="estado" type="boolean">
+            <column name="ESTADO" />
+        </property>
+        <property name="transaccionId" type="int">
+        	<column name="TRASACCIONID" />
+        </property>
+    </class>
+</hibernate-mapping>
